@@ -40,7 +40,7 @@ newman.run({
     collection: require('./collections/yourCollectionName.json'),
     reporters: reporters,
 }, function (err: Error | null) {
-	if (err) { throw err; }
+    if (err) { throw err; }
     console.log('Collection run complete!');
 });
 ```
@@ -51,7 +51,7 @@ newman.run({
     collection: 'https://www.getpostman.com/collections/YourCollectionID',
     reporters: reporters,
 }, function (err: Error | null) {
-	if (err) { throw err; }
+    if (err) { throw err; }
     console.log('Cloud collection run complete!');
 });
 ```
@@ -69,5 +69,5 @@ Para poder ejecutar las collections desde la nube debes tener una cuenta de [Pos
 
 Deberás exportar tu collection en la nube y obtener el ID de la collection mediante.
 
-* Seleccionar la opció **"Share"**.
+* Seleccionar la opción **"Share"**.
 * Seleccionar **"Vía JSON link"**.
