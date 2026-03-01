@@ -1,7 +1,7 @@
 import * as newman from 'newman'; // require newman in your project
 
 // List of reports
-const reports = ['junit', 'cli', 'htmlextra'];
+const reports = ['junit', 'cli', 'progress', 'json', 'htmlextra'];
 
 // call newman.run to pass `options` object and wait for callback
 newman.run({
