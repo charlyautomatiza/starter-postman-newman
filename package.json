@@ -5,7 +5,8 @@
   "main": "main.ts",
   "scripts": {
     "clean": "rimraf ./newman",
-    "test": "npm run clean && npx ts-node ./src/main.ts"
+    "test": "npm run clean && npx ts-node ./src/main.ts",
+    "test:prod": "npm run clean && newman run src/collections/postman_echo.postman_collection.json --bail --reporters cli,htmlextra,junit --reporter-htmlextra-export newman/report.html --reporter-junit-export newman/results.xml"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   "homepage": "https://github.com/charlyautomatiza/starter-postman-newman#readme",
   "dependencies": {
     "newman": "^5.3.2",
+    "newman-reporter-htmlextra": "^1.22.11",
     "rimraf": "^3.0.2",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.3"
