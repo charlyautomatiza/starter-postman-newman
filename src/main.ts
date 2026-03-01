@@ -1,4 +1,4 @@
-import newman from 'newman'; // require newman in your project
+import * as newman from 'newman'; // require newman in your project
 
 // List of reports
 const reports = ['junit', 'cli', 'htmlextra'];
